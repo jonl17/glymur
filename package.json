@@ -9,11 +9,11 @@
   ],
   "scripts": {
     "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "gatsby develop --host 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "fart": "gatsby clean && gatsby develop"
+    "fart": "gatsby clean && yarn start"
   },
   "license": "0BSD",
   "dependencies": {

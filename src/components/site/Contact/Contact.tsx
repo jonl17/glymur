@@ -16,7 +16,13 @@ const Contact = ({
         <p>{city}</p>
       </div>
       <div>
-        <p className='contact--thick mb-0'>{email}</p>
+        <a
+          target='_blank'
+          href={`mailto:${email}`}
+          className='contact--thick mb-0'
+        >
+          {email}
+        </a>
         <p>{telephone}</p>
       </div>
     </div>

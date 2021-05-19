@@ -25,6 +25,11 @@ body {
   font-family: Gotham;
   font-weight: 400;
 
+  ::selection {
+    background: $color;
+    color: $bg;
+  }
+
   h1 {
     font-size: 65.05px;
     font-weight: 500;
@@ -33,6 +38,13 @@ body {
     @include media-breakpoint-down('md') {
       font-size: 25px;
       line-height: 33.4px;
+    }
+  }
+
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray;
     }
   }
 
