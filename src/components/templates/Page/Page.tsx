@@ -14,7 +14,7 @@ const Page = ({ data }: Props) => {
   )
 
   return (
-    <div className='page container py-3 pt-xl-4'>
+    <div className='page container py-3 pt-xl-4 fade-in'>
       <div
         dangerouslySetInnerHTML={{
           __html: data.prismicPage.data.text.html,

@@ -5,3 +5,13 @@
 .slice-gap {
   margin-bottom: $spacer * 5;
 }
+
+.fade-in {
+  opacity: 0;
+  animation: fadein 0.5s 0s ease-out forwards;
+}
+
+.slide-from-right {
+  opacity: 0;
+  animation: slidefromright 0.5s 0s ease-out forwards;
+}

@@ -9,7 +9,7 @@ const MainLayout: React.FC = ({ children }) => {
       <SEO />
       <main>
         <div className='pl-lg-5 pt-4 text-center text-lg-left'>
-          <Icon type='logo' />
+          <Icon className='slide-from-right' type='logo' />
         </div>
         {children}
         <div className='rocks'>
