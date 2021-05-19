@@ -1,0 +1,61 @@
+{
+  "Main": {
+    "title": {
+      "type": "Text",
+      "config": {
+        "label": "Title"
+      }
+    },
+    "description": {
+      "type": "Text",
+      "config": {
+        "label": "Description"
+      }
+    },
+    "image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 630
+        },
+        "thumbnails": [],
+        "label": "Image"
+      }
+    },
+    "favicon": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 120,
+          "height": 120
+        },
+        "thumbnails": [],
+        "label": "Favicon"
+      }
+    },
+    "contact": {
+      "type": "Group",
+      "config": {
+        "fields": {
+          "type": {
+            "type": "Select",
+            "config": {
+              "options": ["email", "facebook", "instagram"],
+              "label": "Type",
+              "placeholder": "Choose a platform"
+            }
+          },
+          "link": {
+            "type": "Link",
+            "config": {
+              "allowTargetBlank": true,
+              "label": "Link"
+            }
+          }
+        },
+        "label": "Contact"
+      }
+    }
+  }
+}

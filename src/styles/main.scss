@@ -1,0 +1,48 @@
+@import './config/bootstrap-variables-overrides.scss';
+
+@import './config/typography.scss';
+@import './config/base.scss';
+
+@import './config/utils.scss';
+
+$blue: #264f7a;
+$gray: #e8e8e8;
+
+$bg: $blue;
+$color: $gray;
+
+@import './components/page';
+@import './components/menu';
+@import './components/video';
+@import './components/aspect-ratio-box';
+@import './components/rich-text';
+@import './components/images';
+@import './components/footer';
+@import './components/rocks';
+@import './components/contact';
+
+body {
+  font-family: Gotham;
+  font-weight: 400;
+
+  h1 {
+    font-size: 65.05px;
+    font-weight: 500;
+    line-height: 130%;
+
+    @include media-breakpoint-down('md') {
+      font-size: 25px;
+      line-height: 33.4px;
+    }
+  }
+
+  main {
+    min-height: 100vh;
+    background-color: $bg;
+    color: $color;
+
+    * {
+      fill: $color;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Main": {
+    "name": {
+      "type": "Text",
+      "config": {
+        "label": "Name"
+      }
+    },
+    "street": {
+      "type": "Text",
+      "config": {
+        "label": "Street"
+      }
+    },
+    "city": {
+      "type": "Text",
+      "config": {
+        "label": "City"
+      }
+    },
+    "email": {
+      "type": "Text",
+      "config": {
+        "label": "Email"
+      }
+    },
+    "telephone": {
+      "type": "Text",
+      "config": {
+        "label": "Telephone"
+      }
+    }
+  }
+}

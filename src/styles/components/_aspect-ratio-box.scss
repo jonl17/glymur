@@ -1,0 +1,25 @@
+.widescreen {
+  // aka 16/9
+  padding-bottom: 56.25%;
+}
+
+.aspect-ratio-box {
+  height: 0;
+  position: relative;
+
+  img,
+  div {
+    // needs to be !important otherwise it won't overwrite the gatsby-image-wrapper position relative
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &--widescreen {
+    @extend .aspect-ratio-box;
+    @extend .widescreen;
+  }
+}

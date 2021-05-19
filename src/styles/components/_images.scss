@@ -1,0 +1,15 @@
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: $spacer * 2;
+
+  @include media-breakpoint-down('md') {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+}

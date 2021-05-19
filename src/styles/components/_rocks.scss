@@ -1,0 +1,10 @@
+@import url('./animations.scss');
+
+.rocks {
+  position: fixed;
+  bottom: 0;
+  right: $spacer * 7;
+
+  opacity: 0;
+  animation: rollup 0.5s 0.5s ease-in-out forwards;
+}
