@@ -19,7 +19,7 @@ const Page = ({ data }: Props) => {
         dangerouslySetInnerHTML={{
           __html: data.prismicPage.data.text.html,
         }}
-        className='mb-4 mt-4 mt-lg-0'
+        className='mb-5 mt-4 mt-lg-3 col-lg-8 pl-0'
       />
       <Contact {...contact} />
     </div>
