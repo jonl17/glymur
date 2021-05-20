@@ -31,9 +31,10 @@ body {
   }
 
   h1 {
-    font-size: 55.05px;
     font-weight: 500;
     line-height: 130%;
+
+    font-size: 52.05px;
 
     @include media-breakpoint-down('md') {
       font-size: 25px;
