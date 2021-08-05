@@ -1,9 +1,5 @@
 const path = require('path')
 
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 const { accessToken, repositoryName, schemas } = require('./prismic-config')
 const linkResolver = require('./src/data/resolvers/link')
 
@@ -12,7 +8,7 @@ const prismicPlugin = {
   options: {
     repositoryName,
     accessToken,
-    linkResolver: () => doc => linkResolver(doc),
+    linkResolver: doc => linkResolver(doc),
     schemas,
     lang: '*',
   },

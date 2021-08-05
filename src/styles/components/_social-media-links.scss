@@ -1,0 +1,10 @@
+.social-media-links {
+  svg {
+    transition: transform 0.5s;
+    height: 50px;
+
+    &:hover {
+      transform: scale(0.98);
+    }
+  }
+}

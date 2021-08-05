@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const { PRISMIC_REPOSITORY_NAME, PRISMIC_ACCESS_TOKEN } = process.env
 
 const schemas = {

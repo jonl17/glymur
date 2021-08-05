@@ -1,5 +1,6 @@
 import React from 'react'
 import { ContactInformationInterface } from '@src/data/resolvers/data'
+import SocialMediaLinks from '@cmp/site/SocialMediaLinks'
 
 const Contact = ({
   city,
@@ -15,7 +16,7 @@ const Contact = ({
         <p className='mb-0'>{street}</p>
         <p>{city}</p>
       </div>
-      <div>
+      <div className='mb-3'>
         <a
           target='_blank'
           href={`mailto:${email}`}
@@ -25,6 +26,7 @@ const Contact = ({
         </a>
         <p>{telephone}</p>
       </div>
+      <SocialMediaLinks />
     </div>
   )
 }
