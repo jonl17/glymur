@@ -16,7 +16,7 @@ const Contact = ({
         <p className='mb-0'>{street}</p>
         <p>{city}</p>
       </div>
-      <div className='mb-3'>
+      <div className='mb-2'>
         <a
           target='_blank'
           href={`mailto:${email}`}
